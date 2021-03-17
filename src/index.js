@@ -3,10 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import PageRouter from './routes/PageRouter';
+import UserProvider from './providers/UserProvider';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <UserProvider>
+      <PageRouter>
+        <App />
+      </PageRouter>
+    </UserProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
