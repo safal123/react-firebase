@@ -9,6 +9,7 @@ import CompanyProfile from '../components/CompanyProfile';
 import EditCompanyProfile from '../components/EditCompanyProfile';
 import Login from '../components/Login';
 import Navbar from '../components/Navbar';
+import CsNavbar from '../components/cs-cart/CsNavbar';
 import PasswordReset from '../components/PasswordReset';
 import ProfilePage from '../components/Profile';
 import Signup from '../components/Signup';
@@ -18,6 +19,7 @@ import PublicRoute from './PublicRoute';
 const PageRouter = () => {
     return (
         <Router>
+            <CsNavbar />
             <Navbar />
             <Switch>
                 <Route exact path="/">

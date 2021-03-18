@@ -22,7 +22,7 @@ const CompanyProfile = () => {
         return <Spinner color="red" />
     }
     return (
-        <div className="w-3/4 mx-auto mt-2 mb-4">
+        <div className="px-14 mx-auto mt-2 mb-4">
             <div className="flex flex-col ">
                 <div className="bg-white shadow overflow-hidden">
                     <div className="px-4 py-5 sm:px-6 flex items-center justify-between">

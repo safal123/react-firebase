@@ -5,8 +5,11 @@ import 'moment-timezone';
 
 const CompanyCard = ({ company }) => {
     return (
-        <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
-            <article className="overflow-hidden rounded-lg shadow-lg">
+        <div className="static my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+            <article className="overflow-hidden shadow-sm  hover:shadow-lg">
+                <div className="absolute text-black fixted top-0 left-0 bg-blur-200 z-10">
+                    ADD
+            </div>
                 <Link to={`/company-profile/${company.id}`}>
                     <img alt="Placeholder" className="block h-auto w-full" src="https://picsum.photos/600/400/?random" />
                 </Link>
